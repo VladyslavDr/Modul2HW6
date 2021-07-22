@@ -20,4 +20,9 @@ public class TaxiStationServise : ITaxiStationServise
 
         return cars;
     }
+
+    public CarModel GetCar(CarModel[] cars, FuelConsumption fuelConsumption)
+    {
+        return cars.GetCarByFuelConsumption(fuelConsumption);
+    }
 }

@@ -23,6 +23,14 @@ public class Starter
             Console.WriteLine($"car: {car}, fuel consumption: {car.FuelConsumption.Value}, cost: {car.Cost.Value}");
         }
 
-        Console.WriteLine($"cost = {cost}");
+        Console.WriteLine();
+
+        var carWithFuelConsumption = new TaxiStationServise().GetCar(myTaxyStation, new FuelConsumption { Value = 8.8 });
+
+        Console.WriteLine($"carWithFuelConsumption 8.8: {carWithFuelConsumption}");
+
+        Console.WriteLine();
+
+        Console.WriteLine($"total cost of the car = {cost}");
     }
 }
